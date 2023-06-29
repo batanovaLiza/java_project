@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = "myFirstProgram"
+mainClassName = "ru.stqa.ptf.sandbox.MyFirstProgram"
+
 
 repositories{
     mavenCentral()
