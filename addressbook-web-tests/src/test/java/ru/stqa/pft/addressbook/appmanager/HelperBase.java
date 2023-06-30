@@ -16,10 +16,10 @@ public class HelperBase {
         wd.findElement(locator).click();
     }
 
-    protected void type(String group_name, String groupData) {
-        getClick(By.name(group_name));
-        wd.findElement(By.name(group_name)).clear();
-        wd.findElement(By.name(group_name)).sendKeys(groupData);
+    protected void type(String locator, String text) {
+        getClick(By.name(text));
+        wd.findElement(By.name(text)).clear();
+        wd.findElement(By.name(text)).sendKeys(locator);
     }
     public boolean isAlertPresent() {
         try {

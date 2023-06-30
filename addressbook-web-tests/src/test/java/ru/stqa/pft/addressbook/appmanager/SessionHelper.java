@@ -8,8 +8,8 @@ public class SessionHelper extends HelperBase{
         super(wd);
     }
     public void login(String username, String password) {
-        type("user",username);
-        type("pass",password);
+        type(username, "user");
+        type(password, "pass");
         getClick(By.xpath("//input[@value='Login']"));
     }
 }
