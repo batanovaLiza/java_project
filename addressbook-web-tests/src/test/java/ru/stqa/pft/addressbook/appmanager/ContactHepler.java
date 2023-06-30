@@ -14,12 +14,11 @@ public class ContactHepler extends HelperBase{
     }
 
     public void fillNewContactForm(ContactData contactData) {
-        type(contactData.getFirstName(),"first name");
-        type(contactData.getLastName(),"last name");
+        type(contactData.getFirstName(),"firstname");
+        type(contactData.getLastName(),"lastname");
         type(contactData.getCompany(),"company");
-        type(contactData.getAddress(),"address");
-        type(contactData.getHomePhoneNumb(),"0909090");
-        type(contactData.getEmail(),"asjn@ddj.com");
+        type(contactData.getAddress(), "address");
+        type(contactData.getEmail(),"email");
     }
     public void goToNewContactPage() {
         getClick(By.linkText("add new"));

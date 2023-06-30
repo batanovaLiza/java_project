@@ -7,7 +7,7 @@ public class newContactCreationTest extends TestBase{
     @Test
     public void testNewContactCreation() throws Exception{
         app.getContactHepler().goToNewContactPage();
-        app.getContactHepler().fillNewContactForm(new ContactData("Benedict", "Kunberbatch", "Dirol", "Nizhny Novgorod", "0123923", "laefbaljef@fjnd.com"));
+        app.getContactHepler().fillNewContactForm(new ContactData("Benedict", "Kunberbatch", "Dirol", "NizhnyNovgorod", "laefbaljef@fjnd.com"));
         app.getContactHepler().submitNewContactCreation();
         app.returnToHomePage();
     }
