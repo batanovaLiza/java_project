@@ -35,4 +35,8 @@ public class ContactHepler extends HelperBase{
     public void updateModification() {
         getClick(By.xpath("//div[@id='content']/form/input[22]"));
     }
+
+    public void deleteContact() {
+        getClick(By.xpath("//div[@id='content']/form[2]/input[2]"));
+    }
 }
