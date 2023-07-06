@@ -14,4 +14,7 @@ public class NavigationHelper extends HelperBase{
     }
 
 
+    public void goToHomePage() {
+        getClick(By.linkText("home"));
+    }
 }

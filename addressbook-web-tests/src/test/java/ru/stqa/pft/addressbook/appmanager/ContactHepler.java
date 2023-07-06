@@ -13,7 +13,7 @@ public class ContactHepler extends HelperBase{
         getClick(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void fillNewContactForm(ContactData contactData) {
+    public void fillContactForm(ContactData contactData) {
         type(contactData.getFirstName(),"firstname");
         type(contactData.getLastName(),"lastname");
         type(contactData.getCompany(),"company");
@@ -24,4 +24,15 @@ public class ContactHepler extends HelperBase{
         getClick(By.linkText("add new"));
     }
 
+    public void editContact() {
+        getClick(By.xpath("//table[@id='maintable']/tbody/tr[4]/td[8]/a/img"));
+    }
+
+    public void selectContact() {
+        getClick(By.id("5"));
+    }
+
+    public void updateModification() {
+        getClick(By.xpath("//div[@id='content']/form/input[22]"));
+    }
 }
